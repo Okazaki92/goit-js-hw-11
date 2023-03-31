@@ -1,12 +1,6 @@
 import axios from "axios";
 
-// rome-ignore lint/style/useConst: <explanation>
-let page = 1;
-// rome-ignore lint/style/useConst: <explanation>
-let query = "";
-const perPage = 3;
-
-const getGallery = async () => {
+const getGallery = async (query, page, perPage) => {
 	try {
 		const response = await axios.get("https://pixabay.com/api/", {
 			params: {
