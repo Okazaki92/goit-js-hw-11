@@ -8,7 +8,7 @@ const lightbox = new SimpleLightbox(".gallery a", {
 	captionDelay: 250,
 });
 
-function renderGallery(images) {
+const renderGallery = (images) => {
 	const markup = images
 		.map((image) => {
 			const {
@@ -40,6 +40,7 @@ function renderGallery(images) {
 	gallery.insertAdjacentHTML("beforeend", markup);
 
 	lightbox.refresh();
-}
+};
 
-export { renderGallery };
+const addGallery = { renderGallery };
+export default addGallery;
