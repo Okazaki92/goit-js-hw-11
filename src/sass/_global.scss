@@ -1,0 +1,14 @@
+body {
+  overflow: auto;
+  background: linear-gradient(
+    90deg,
+    rgb(47, 101, 0) 10%,
+    rgb(206, 111, 60) 30%,
+    rgba(48, 238, 226, 1) 60%,
+    rgb(201, 25, 255) 98%
+  );
+};
+
+.is-hidden {
+   opacity: 0;
+};

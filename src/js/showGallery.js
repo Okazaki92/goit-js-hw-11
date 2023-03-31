@@ -6,6 +6,7 @@ const getGallery = async (query, page, perPage) => {
 			params: {
 				key: "34523545-f21683fd59bfc3e4e2549fe07",
 				q: `${query}`,
+				lang: "en, pl",
 				image_type: "photo",
 				orientation: "horizontal",
 				safesearch: true,
