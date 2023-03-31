@@ -39,10 +39,10 @@ const onSubmit = async (event) => {
 			? alertNoImagesFound() && loader.hideLoader()
 			: successImagesFound(data);
 		addGallery.renderGallery(data.hits);
-		window.scrollTo(0, 0);
 		searchQuery.value = "";
 		const totalPages = data.totalHits / perPage;
 		totalPages > page ? loader.showLoader() : loader.hideLoader();
+		window.scrollTo(0, 0);
 		// data.totalHits > perPage
 		// 	? loadMoreBtn.classList.remove("is-hidden")
 		// 	: loadMoreBtn.classList.add("is-hidden");
